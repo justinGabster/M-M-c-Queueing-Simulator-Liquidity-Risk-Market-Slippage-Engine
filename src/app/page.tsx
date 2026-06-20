@@ -233,12 +233,25 @@ export default function Dashboard() {
                   </p>
                 </div>
 
-                <div className={`mt-2 p-4 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
-                  <p className="text-xs opacity-70 uppercase tracking-wide mb-1">Network State</p>
-                  <p className={`font-bold tracking-widest flex items-center gap-2 ${aggMetrics.isStable ? 'text-[#00FF41]' : 'text-red-500'}`}>
-                    {aggMetrics.isStable ? <CheckCircle2 size={16} /> : <AlertTriangle size={16} />}
-                    {aggMetrics.isStable ? 'OPTIMAL' : 'CRITICAL OVERLOAD'}
-                  </p>
+                <div className={`mt-2 p-3 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
+                  <p className="text-xs opacity-70 uppercase tracking-wide mb-2 text-white">Network State</p>
+                  {aggMetrics.isStable ? (
+                    <div className="flex items-start gap-2 text-[#00FF41]">
+                      <CheckCircle2 size={16} className="mt-0.5 shrink-0" />
+                      <div className="text-[10px] font-mono leading-relaxed">
+                        <p className="font-bold tracking-wider mb-1">SYSTEM OPTIMAL: All traffic processed successfully.</p>
+                        <p>The current liquidity channels ({activeNodes}) successfully mitigated all market slippage risk.</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex items-start gap-2 text-red-500">
+                      <AlertTriangle size={16} className="mt-0.5 shrink-0" />
+                      <div className="text-[10px] font-mono leading-relaxed">
+                        <p className="font-bold tracking-wider mb-1">CRITICAL WARNING: System unstable (ρ ≥ 1) for {chartData.filter(d => !d.isStable).length} minutes!</p>
+                        <p>The current liquidity channels ({activeNodes}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <button 
