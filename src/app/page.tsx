@@ -343,7 +343,7 @@ export default function Dashboard() {
       {/* Dataset Modal */}
       {showDatasetModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000]/80 backdrop-blur-sm p-4">
-          <div className="bg-[#0A0A0A] border border-[#333333] w-full max-w-4xl max-h-[80vh] flex flex-col shadow-2xl">
+          <div className="bg-[#0A0A0A] border border-[#333333] w-full max-w-[95vw] max-h-[85vh] flex flex-col shadow-2xl">
             <div className="flex justify-between items-center p-4 border-b border-[#333333]">
               <h3 className="text-sm font-mono text-[#FFFFFF] uppercase tracking-widest flex items-center gap-2">
                 <Database size={16} className="text-[#FFDD00]" />
@@ -353,11 +353,42 @@ export default function Dashboard() {
                 <X size={20} />
               </button>
             </div>
-            <div className="p-4 overflow-auto custom-scrollbar flex-1 text-xs font-mono text-[#888888] bg-[#000000]">
-              <pre>{JSON.stringify(chartData.slice(0, 100), null, 2)}</pre>
+            <div className="p-0 overflow-auto custom-scrollbar flex-1 bg-[#000000]">
+              <table className="w-full text-left text-sm font-mono text-[#CCCCCC] whitespace-nowrap">
+                <thead className="sticky top-0 bg-[#1C1C1C] border-b border-[#333333] text-[#FFFFFF] shadow-md z-10">
+                  <tr>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Time (Minute)</th>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Arrivals [λ]</th>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Capacity [c*μ]</th>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Utilization [ρ]</th>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Queue Size [Lq]</th>
+                    <th className="p-3 px-4 font-semibold border-r border-[#333333]">Wait Time [Wq]</th>
+                    <th className="p-3 px-4 font-semibold">Network State</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#222222]">
+                  {chartData.slice(0, 100).map((row, idx) => (
+                    <tr key={idx} className="hover:bg-[#111111] transition-colors">
+                      <td className="p-3 px-4 text-[#888888] border-r border-[#222222]">{formatTimeTick(row.minute)} (Min {row.minute})</td>
+                      <td className="p-3 px-4 text-[#FFDD00] border-r border-[#222222]">{row.arrivalRate.toFixed(2)} tx/s</td>
+                      <td className="p-3 px-4 border-r border-[#222222]">{row.serviceRate.toFixed(2)} tx/s</td>
+                      <td className="p-3 px-4 border-r border-[#222222]">{(row.rho * 100).toFixed(2)}%</td>
+                      <td className="p-3 px-4 border-r border-[#222222]">{row.lq.toFixed(2)}</td>
+                      <td className="p-3 px-4 border-r border-[#222222]">{row.wq.toFixed(2)}s</td>
+                      <td className="p-3 px-4">
+                        {row.isStable ? (
+                          <span className="text-[#00FF41]">OPTIMAL</span>
+                        ) : (
+                          <span className="text-red-500 font-bold">CRASHED</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <div className="p-3 border-t border-[#333333] text-[10px] text-center text-[#555555] font-mono uppercase tracking-wider">
-              Showing first 100 entries of {chartData.length} total generated traffic points
+            <div className="p-3 border-t border-[#333333] text-xs text-center text-[#888888] font-mono uppercase tracking-wider">
+              Showing first 100 rows of {chartData.length} total generated traffic points
             </div>
           </div>
         </div>
