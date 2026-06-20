@@ -320,8 +320,11 @@ export default function Dashboard() {
                   stroke="#555555" 
                   tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
-                  domain={[0, (dataMax: number) => Math.max(Math.ceil(dataMax), 2.5)]}
-                  label={{ value: 'Wait Time (Seconds)', angle: -90, position: 'insideLeft', offset: 15, fill: '#888888', fontSize: 10, fontFamily: 'monospace', style: { textAnchor: 'middle' } }}
+                  domain={[0, 2.5]}
+                  ticks={[0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5]}
+                  tickFormatter={(val) => val.toFixed(2)}
+                  allowDataOverflow={true}
+                  label={{ value: 'Wait Time / Slippage Exposure (seconds)', angle: -90, position: 'insideLeft', offset: 15, fill: '#888888', fontSize: 10, fontFamily: 'monospace', style: { textAnchor: 'middle' } }}
                 />
                 <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#FFDD00', strokeWidth: 1, strokeDasharray: '3 3' }} />
                 
