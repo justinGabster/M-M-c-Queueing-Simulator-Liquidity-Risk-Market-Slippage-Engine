@@ -106,42 +106,42 @@ export default function Dashboard() {
       };
 
       return (
-        <div className="bg-[#000000] border border-[#FFDD00] p-4 text-sm shadow-[0_0_15px_rgba(255,221,0,0.3)] min-w-[260px]">
-          <p className="font-mono text-[#FFFFFF] font-bold mb-3 uppercase tracking-wider border-b border-[#333] pb-2 flex items-center justify-between">
+        <div className="bg-[#0A0A0A]/95 backdrop-blur-sm border border-[#FFDD00] p-2 md:p-3 shadow-[0_0_10px_rgba(255,221,0,0.2)] min-w-[160px] md:min-w-[220px]">
+          <p className="font-mono text-[#FFFFFF] font-bold mb-1.5 md:mb-2 uppercase tracking-wider border-b border-[#333] pb-1 md:pb-1.5 flex items-center justify-between text-[9px] md:text-[11px]">
             <span>{data.time}:00.<span className="text-[#888888]">{String(Math.floor((data.arrivalRate * 12345) % 1000000)).padStart(6, '0')}</span></span>
-            <span className="text-[#FFDD00] text-[10px] bg-[#FFDD00]/10 px-2 py-0.5">{data.phase}</span>
+            <span className="text-[#FFDD00] text-[8px] md:text-[9px] bg-[#FFDD00]/10 px-1.5 py-0.5 ml-2">{data.phase}</span>
           </p>
           
-          <div className="space-y-1.5 font-mono text-xs">
-            <p className="text-[#888888] flex justify-between">
+          <div className="space-y-1 md:space-y-1.5 font-mono text-[8px] md:text-[10px]">
+            <p className="text-[#888888] flex justify-between gap-4">
               <span>LOAD [λ]:</span> <span className="text-[#FFDD00]">{data.arrivalRate.toFixed(2)} tx/s</span>
             </p>
             {data.isStable ? (
               <>
-                <p className="text-[#888888] flex justify-between">
+                <p className="text-[#888888] flex justify-between gap-4">
                   <span>LATENCY [Wq]:</span> <span className="text-[#FFDD00]">{data.wq.toFixed(2)}s</span>
                 </p>
-                <p className="text-[#888888] flex justify-between">
-                  <span>UTILIZATION [ρ]:</span> <span className="text-[#FFDD00]">{(data.rho * 100).toFixed(2)}%</span>
+                <p className="text-[#888888] flex justify-between gap-4">
+                  <span>UTIL [ρ]:</span> <span className="text-[#FFDD00]">{(data.rho * 100).toFixed(1)}%</span>
                 </p>
               </>
             ) : (
-              <p className="text-red-500 font-bold flex items-center justify-center gap-2 py-1 my-1 border border-red-500 bg-red-950/40">
-                <AlertTriangle size={12} /> SYSTEM OVERLOAD
+              <p className="text-red-500 font-bold flex items-center justify-center gap-1.5 py-0.5 my-1 border border-red-500 bg-red-950/40 text-[8px] md:text-[10px]">
+                <AlertTriangle size={10} /> SYSTEM OVERLOAD
               </p>
             )}
             
-            <div className="border-t border-[#333] pt-3 mt-3 space-y-2">
-              <p className="text-[#FFFFFF] flex justify-between items-center">
+            <div className="border-t border-[#333] pt-1.5 mt-1.5 md:pt-2 md:mt-2 space-y-1 md:space-y-1.5">
+              <p className="text-[#FFFFFF] flex justify-between items-center gap-4 text-[8px] md:text-[10px]">
                 <span>LIQUIDITY RISK:</span> <span className={colorMap[liqRisk]}>{liqRisk}</span>
               </p>
-              <p className="text-[#FFFFFF] flex justify-between items-center">
+              <p className="text-[#FFFFFF] flex justify-between items-center gap-4 text-[8px] md:text-[10px]">
                 <span>SLIPPAGE RISK:</span> <span className={colorMap[slipRisk]}>{slipRisk}</span>
               </p>
-              <p className="text-[#FFFFFF] flex justify-between items-center">
+              <p className="text-[#FFFFFF] flex justify-between items-center gap-4 text-[8px] md:text-[10px]">
                 <span>TX LATENCY:</span> <span className={colorMap[latStatus]}>{latStatus}</span>
               </p>
-              <p className="text-[#FFFFFF] flex justify-between items-center">
+              <p className="text-[#FFFFFF] flex justify-between items-center gap-4 text-[8px] md:text-[10px]">
                 <span>IDLING COSTS:</span> <span className={colorMap[idleCosts]}>{idleCosts}</span>
               </p>
             </div>
