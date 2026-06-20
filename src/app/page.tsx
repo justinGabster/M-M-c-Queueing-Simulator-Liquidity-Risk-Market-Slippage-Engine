@@ -379,7 +379,7 @@ export default function Dashboard() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#222222]">
-                  {chartData.slice(0, 100).map((row, idx) => {
+                  {chartData.map((row, idx) => {
                     const today = new Date().toISOString().split('T')[0];
                     return (
                       <tr key={idx} className="hover:bg-[#111111] transition-colors">
@@ -394,7 +394,7 @@ export default function Dashboard() {
               </table>
             </div>
             <div className="p-3 border-t border-[#333333] text-xs text-center text-[#888888] font-mono uppercase tracking-wider">
-              Showing first 100 rows of {chartData.length} total generated traffic points
+              Showing all {chartData.length} generated traffic points
             </div>
           </div>
         </div>
