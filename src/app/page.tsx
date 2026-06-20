@@ -226,20 +226,33 @@ export default function Dashboard() {
               <Activity size={14} className="text-[#FFDD00]" />
               Telemetry
             </h2>
-            
             {aggMetrics && (
               <div className="flex flex-col gap-2 font-mono">
-                <div className="flex flex-col gap-1 text-[11px] leading-relaxed bg-[#0A0A0A] p-3 border border-[#1C1C1C]">
+                <div className="flex flex-col gap-2 text-[10px] sm:text-[11px] leading-relaxed">
                   {!aggMetrics.isStable ? (
-                    <div className="text-red-500 whitespace-pre-wrap">
-                      <p className="font-bold">CRITICAL WARNING: System unstable (ρ ≥ 1) for {aggMetrics.crashes} minutes!</p>
-                      <p>The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
-                    </div>
+                    <>
+                      <div className="p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500 font-bold">
+                        CRITICAL WARNING: System unstable (ρ ≥ 1) for {aggMetrics.crashes} minutes!
+                      </div>
+                      <div className="p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500">
+                        The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.
+                      </div>
+                    </>
                   ) : (
-                    <div className={aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}>
-                      <p>Avg Wait Time (W_q): {aggMetrics.avgWq.toFixed(4)}s  |  Max Peak Wait Time: {aggMetrics.maxWq.toFixed(4)}s</p>
-                      <p>Avg System Utilization (ρ): {(aggMetrics.avgRho * 100).toFixed(2)}%  |  {aggMetrics.maxWq > 2.0 ? "Warning: High Market Slippage Risk during peak surges." : "Stable: Wait times comfortably mitigating slippage risk."}</p>
-                    </div>
+                    <>
+                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        Avg Wait Time (W_q): {aggMetrics.avgWq.toFixed(4)}s
+                      </div>
+                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        Max Peak Wait Time: {aggMetrics.maxWq.toFixed(4)}s
+                      </div>
+                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        Avg System Utilization (ρ): {(aggMetrics.avgRho * 100).toFixed(2)}%
+                      </div>
+                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        {aggMetrics.maxWq > 2.0 ? "Warning: High Market Slippage Risk during peak surges." : "Stable: Wait times comfortably mitigating slippage risk."}
+                      </div>
+                    </>
                   )}
                 </div>
 
