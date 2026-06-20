@@ -268,11 +268,11 @@ export default function Dashboard() {
             {/* Legend Overlay */}
             <div className="absolute top-4 right-4 bg-[#0A0A0A]/90 backdrop-blur-md border border-[#333333] p-3 z-10 font-mono text-[10px] uppercase tracking-wider shadow-lg">
               <div className="flex items-center gap-3 mb-2">
-                <span className="w-4 h-[2px] bg-[#FFFFFF]"></span>
+                <div className="w-4 h-[3px] bg-white rounded-full"></div>
                 <span className="text-[#FFFFFF]">Queue Wait Time (Wq)</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-4 border-t-2 border-dashed border-red-500"></span>
+                <div className="w-4 h-0 border-b-2 border-dashed border-red-500"></div>
                 <span className="text-red-500">Critical Slippage Threshold (2s)</span>
               </div>
             </div>
