@@ -164,15 +164,9 @@ export default function Dashboard() {
           </h1>
           <p className="text-[#888888] mt-0.5 md:mt-1 font-mono text-[10px] md:text-xs tracking-widest uppercase">M/M/c Slippage & Load Simulation</p>
         </div>
-        <button 
-          onClick={() => setTrafficData(STATIC_TRAFFIC_DATA)}
-          className="w-full md:w-auto px-4 py-1.5 bg-[#1C1C1C] hover:bg-[#2A2A2A] text-[#FFDD00] border border-[#FFDD00] uppercase font-mono text-[10px] md:text-xs tracking-wider transition-all shadow-[0_0_10px_rgba(255,221,0,0.2)] hover:shadow-[0_0_20px_rgba(255,221,0,0.5)] flex items-center justify-center gap-2 shrink-0"
-        >
-          <Activity size={14} /> Re-Initialize Protocol
-        </button>
       </header>
 
-      <main className="flex-1 flex flex-col lg:grid lg:grid-cols-4 gap-2 md:gap-4 min-h-0">
+      <main className="flex-1 flex flex-col-reverse md:flex-col lg:grid lg:grid-cols-4 gap-2 md:gap-4 min-h-0">
         
         {/* Left Col: Controls & Metrics */}
         <div className="flex-none lg:flex-auto flex flex-col gap-2 md:gap-4 lg:col-span-1 overflow-y-auto custom-scrollbar md:pr-1 md:pb-1">
