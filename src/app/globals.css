@@ -58,19 +58,24 @@ body {
   box-shadow: 0 0 8px rgba(255, 221, 0, 0.2);
 }
 
+.custom-scrollbar {
+  scroll-behavior: smooth;
+}
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: var(--bg-absolute-black);
+  background: transparent;
+  border-radius: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: var(--bg-charcoal);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 221, 0, 0.3);
+  background: rgba(255, 221, 0, 0.4);
 }
 
 /* Custom Range Inputs */
