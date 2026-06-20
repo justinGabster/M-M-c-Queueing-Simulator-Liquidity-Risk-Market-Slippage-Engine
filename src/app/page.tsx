@@ -258,7 +258,7 @@ export default function Dashboard() {
 
                 <button 
                   onClick={() => setShowDatasetModal(true)}
-                  className="mt-2 w-full py-2.5 border border-[#333333] hover:border-[#FFDD00] bg-[#000000] hover:bg-[#1C1C1C] transition-all text-[10px] font-mono text-[#FFFFFF] hover:text-[#FFDD00] uppercase tracking-widest flex items-center justify-center gap-2"
+                  className="mt-2 mb-4 w-full py-2.5 border border-[#333333] hover:border-[#FFDD00] bg-[#000000] hover:bg-[#1C1C1C] transition-all text-[10px] font-mono text-[#FFFFFF] hover:text-[#FFDD00] uppercase tracking-widest flex items-center justify-center gap-2 shrink-0"
                 >
                   <Database size={14} />
                   View Sample Dataset
