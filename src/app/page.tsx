@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
-  ReferenceArea, Brush 
+  ReferenceArea, Brush, Legend, ReferenceLine
 } from 'recharts';
 import { Settings, AlertTriangle, CheckCircle2, Activity, Zap } from 'lucide-react';
 import { calculateMMc, generateTrafficData, TrafficDataPoint } from '@/lib/queueingEngine';
@@ -265,14 +265,27 @@ export default function Dashboard() {
           </div>
 
           <div className="flex-1 w-full relative min-h-0">
+            {/* Legend Overlay */}
+            <div className="absolute top-4 right-4 bg-[#0A0A0A]/90 backdrop-blur-md border border-[#333333] p-3 z-10 font-mono text-[10px] uppercase tracking-wider shadow-lg">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="w-4 h-[2px] bg-[#FFFFFF]"></span>
+                <span className="text-[#FFFFFF]">Queue Wait Time (Wq)</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-4 border-t-2 border-dashed border-red-500"></span>
+                <span className="text-red-500">Critical Slippage Threshold (2s)</span>
+              </div>
+            </div>
+
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+              <LineChart data={chartData} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="1 4" stroke="#333333" vertical={false} />
                 
                 {/* Partitions with strict palette */}
                 <ReferenceArea x1={0} x2={360} fill="#FFFFFF" fillOpacity={0.03} /> {/* Off-Peak */}
                 <ReferenceArea x1={660} x2={840} fill="#FFFFFF" fillOpacity={0.08} /> {/* Lunch */}
                 <ReferenceArea x1={1080} x2={1260} fill="#FFDD00" fillOpacity={0.15} /> {/* Payday */}
+                <ReferenceLine y={2} stroke="#EF4444" strokeDasharray="4 4" strokeWidth={1} label={{ position: 'insideTopLeft', value: '2.0s', fill: '#EF4444', fontSize: 10, fontFamily: 'monospace' }} />
                 
                 <XAxis 
                   dataKey="minute" 
@@ -281,11 +294,14 @@ export default function Dashboard() {
                   minTickGap={50}
                   tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
+                  label={{ value: 'Time of Day (24H)', position: 'bottom', fill: '#888888', fontSize: 10, fontFamily: 'monospace' }}
                 />
                 <YAxis 
                   stroke="#555555" 
                   tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
+                  domain={[0, (dataMax: number) => Math.max(Math.ceil(dataMax), 2.5)]}
+                  label={{ value: 'Wait Time (Seconds)', angle: -90, position: 'insideLeft', offset: 15, fill: '#888888', fontSize: 10, fontFamily: 'monospace', style: { textAnchor: 'middle' } }}
                 />
                 <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#FFDD00', strokeWidth: 1, strokeDasharray: '3 3' }} />
                 
@@ -315,7 +331,6 @@ export default function Dashboard() {
                   stroke="#FFDD00" 
                   fill="#000000"
                   tickFormatter={formatTimeTick}
-                  tick={{fontFamily: 'monospace', fontSize: 9, fill: '#888888'}}
                 />
               </LineChart>
             </ResponsiveContainer>
