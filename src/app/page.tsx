@@ -6,7 +6,8 @@ import {
   ReferenceArea, Brush, Legend, ReferenceLine
 } from 'recharts';
 import { Settings, AlertTriangle, CheckCircle2, Activity, Zap, Database, X } from 'lucide-react';
-import { calculateMMc, generateTrafficData, TrafficDataPoint } from '@/lib/queueingEngine';
+import { calculateMMc, TrafficDataPoint } from '@/lib/queueingEngine';
+import { STATIC_TRAFFIC_DATA } from '@/lib/staticTrafficData';
 
 export default function Dashboard() {
   const [mu, setMu] = useState<number>(20);
@@ -17,7 +18,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     setIsClient(true);
-    setTrafficData(generateTrafficData());
+    setTrafficData(STATIC_TRAFFIC_DATA);
   }, []);
 
   const { chartData, aggMetrics } = useMemo(() => {
