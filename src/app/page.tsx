@@ -393,13 +393,12 @@ export default function Dashboard() {
                 </thead>
                 <tbody className="divide-y divide-[#222222]">
                   {chartData.map((row, idx) => {
-                    const today = new Date().toISOString().split('T')[0];
                     return (
                       <tr key={idx} className="hover:bg-[#111111] transition-colors">
-                        <td className="p-3 px-4 text-[#888888] border-r border-[#222222]">{today} {row.time}:00</td>
+                        <td className="p-3 px-4 text-[#888888] border-r border-[#222222]">2026-06-20 {row.time}:00</td>
                         <td className="p-3 px-4 text-[#888888] border-r border-[#222222]">{row.time}</td>
                         <td className="p-3 px-4 border-r border-[#222222]">{row.phase}</td>
-                        <td className="p-3 px-4 text-[#FFDD00]">{Math.round(row.arrivalRate)}</td>
+                        <td className="p-3 px-4 text-[#FFDD00]">{row.arrivalRate}</td>
                       </tr>
                     );
                   })}
