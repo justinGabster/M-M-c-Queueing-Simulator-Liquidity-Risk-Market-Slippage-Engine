@@ -311,7 +311,7 @@ export default function Dashboard() {
                   dataKey="minute" 
                   tickFormatter={formatTimeTick} 
                   stroke="#555555" 
-                  minTickGap={50}
+                  ticks={[0, 360, 660, 840, 1080, 1260, 1439]}
                   tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
                   label={{ value: 'Time of Day (24H)', position: 'bottom', fill: '#888888', fontSize: 10, fontFamily: 'monospace' }}
