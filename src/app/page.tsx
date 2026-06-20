@@ -228,43 +228,20 @@ export default function Dashboard() {
             </h2>
             
             {aggMetrics && (
-              <div className="flex flex-col gap-2 font-mono">
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-[#0A0A0A] p-2.5 border border-[#1C1C1C]">
-                    <p className="text-[9px] text-[#888888] uppercase tracking-wider mb-0.5 truncate">Mean Latency</p>
-                    <p className="text-base font-bold text-[#FFFFFF] truncate">
-                      {aggMetrics.isStable ? `${aggMetrics.avgWq.toFixed(2)}s` : 'INFINITE'}
-                    </p>
+              <div className="flex flex-col gap-1 font-mono text-[11px] leading-relaxed bg-[#0A0A0A] p-3 border border-[#1C1C1C]">
+                {!aggMetrics.isStable ? (
+                  <div className="text-red-500 whitespace-pre-wrap">
+                    <p className="font-bold">CRITICAL WARNING: System unstable (ρ ≥ 1) for {aggMetrics.crashes} minutes!</p>
+                    <p>The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
                   </div>
-                  
-                  <div className="bg-[#0A0A0A] p-2.5 border border-[#1C1C1C]">
-                    <p className="text-[9px] text-[#888888] uppercase tracking-wider mb-0.5 truncate">Peak Util.</p>
-                    <p className="text-base font-bold text-[#FFFFFF] truncate">
-                      {(aggMetrics.maxRho * 100).toFixed(2)}%
-                    </p>
+                ) : (
+                  <div className={aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}>
+                    <p>Avg Wait Time (W_q): {aggMetrics.avgWq.toFixed(4)}s  |  Max Peak Wait Time: {aggMetrics.maxWq.toFixed(4)}s</p>
+                    <p>Avg System Utilization (ρ): {(aggMetrics.avgRho * 100).toFixed(2)}%  |  {aggMetrics.maxWq > 2.0 ? "Warning: High Market Slippage Risk during peak surges." : "Stable: Wait times comfortably mitigating slippage risk."}</p>
                   </div>
-                </div>
-
-                <div className={`mt-1 p-2.5 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
-                  <p className="text-[10px] opacity-70 uppercase tracking-wide mb-1.5 text-white">Network State</p>
-                  {aggMetrics.isStable ? (
-                    <div className="flex items-start gap-2 text-[#00FF41]">
-                      <CheckCircle2 size={16} className="mt-0.5 shrink-0" />
-                      <div className="text-[10px] font-mono leading-relaxed">
-                        <p className="font-bold tracking-wider mb-1">SYSTEM OPTIMAL: All traffic processed successfully.</p>
-                        <p>The current liquidity channels ({c}) successfully mitigated all market slippage risk.</p>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="flex items-start gap-2 text-red-500">
-                      <AlertTriangle size={16} className="mt-0.5 shrink-0" />
-                      <div className="text-[10px] font-mono leading-relaxed">
-                        <p className="font-bold tracking-wider mb-1">CRITICAL WARNING: System unstable (ρ ≥ 1) for {chartData.filter(d => !d.isStable).length} minutes!</p>
-                        <p>The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
+                )}
+              </div>
+            )}
 
                 <button 
                   onClick={() => setShowDatasetModal(true)}
