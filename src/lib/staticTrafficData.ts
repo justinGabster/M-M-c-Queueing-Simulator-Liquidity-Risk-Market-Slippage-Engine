@@ -1,3600 +1,3600 @@
 export const STATIC_TRAFFIC_DATA = [
   {
-    "time": "00:00",
+    "time": "0:00",
     "minute": 0,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:01",
+    "time": "0:01",
     "minute": 1,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:02",
+    "time": "0:02",
     "minute": 2,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:03",
+    "time": "0:03",
     "minute": 3,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:04",
+    "time": "0:04",
     "minute": 4,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:05",
+    "time": "0:05",
     "minute": 5,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:06",
+    "time": "0:06",
     "minute": 6,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:07",
+    "time": "0:07",
     "minute": 7,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:08",
+    "time": "0:08",
     "minute": 8,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:09",
+    "time": "0:09",
     "minute": 9,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:10",
+    "time": "0:10",
     "minute": 10,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:11",
+    "time": "0:11",
     "minute": 11,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:12",
+    "time": "0:12",
     "minute": 12,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:13",
+    "time": "0:13",
     "minute": 13,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:14",
+    "time": "0:14",
     "minute": 14,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:15",
+    "time": "0:15",
     "minute": 15,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:16",
+    "time": "0:16",
     "minute": 16,
     "arrivalRate": 18,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:17",
+    "time": "0:17",
     "minute": 17,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:18",
+    "time": "0:18",
     "minute": 18,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:19",
+    "time": "0:19",
     "minute": 19,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:20",
+    "time": "0:20",
     "minute": 20,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:21",
+    "time": "0:21",
     "minute": 21,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:22",
+    "time": "0:22",
     "minute": 22,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:23",
+    "time": "0:23",
     "minute": 23,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:24",
+    "time": "0:24",
     "minute": 24,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:25",
+    "time": "0:25",
     "minute": 25,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:26",
+    "time": "0:26",
     "minute": 26,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:27",
+    "time": "0:27",
     "minute": 27,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:28",
+    "time": "0:28",
     "minute": 28,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:29",
+    "time": "0:29",
     "minute": 29,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:30",
+    "time": "0:30",
     "minute": 30,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:31",
+    "time": "0:31",
     "minute": 31,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:32",
+    "time": "0:32",
     "minute": 32,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:33",
+    "time": "0:33",
     "minute": 33,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:34",
+    "time": "0:34",
     "minute": 34,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:35",
+    "time": "0:35",
     "minute": 35,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:36",
+    "time": "0:36",
     "minute": 36,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:37",
+    "time": "0:37",
     "minute": 37,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:38",
+    "time": "0:38",
     "minute": 38,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:39",
+    "time": "0:39",
     "minute": 39,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:40",
+    "time": "0:40",
     "minute": 40,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:41",
+    "time": "0:41",
     "minute": 41,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:42",
+    "time": "0:42",
     "minute": 42,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:43",
+    "time": "0:43",
     "minute": 43,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:44",
+    "time": "0:44",
     "minute": 44,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:45",
+    "time": "0:45",
     "minute": 45,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:46",
+    "time": "0:46",
     "minute": 46,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:47",
+    "time": "0:47",
     "minute": 47,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:48",
+    "time": "0:48",
     "minute": 48,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:49",
+    "time": "0:49",
     "minute": 49,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:50",
+    "time": "0:50",
     "minute": 50,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:51",
+    "time": "0:51",
     "minute": 51,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:52",
+    "time": "0:52",
     "minute": 52,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:53",
+    "time": "0:53",
     "minute": 53,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:54",
+    "time": "0:54",
     "minute": 54,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:55",
+    "time": "0:55",
     "minute": 55,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:56",
+    "time": "0:56",
     "minute": 56,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:57",
+    "time": "0:57",
     "minute": 57,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:58",
+    "time": "0:58",
     "minute": 58,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "00:59",
+    "time": "0:59",
     "minute": 59,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:00",
+    "time": "1:00",
     "minute": 60,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:01",
+    "time": "1:01",
     "minute": 61,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:02",
+    "time": "1:02",
     "minute": 62,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:03",
+    "time": "1:03",
     "minute": 63,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:04",
+    "time": "1:04",
     "minute": 64,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:05",
+    "time": "1:05",
     "minute": 65,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:06",
+    "time": "1:06",
     "minute": 66,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:07",
+    "time": "1:07",
     "minute": 67,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:08",
+    "time": "1:08",
     "minute": 68,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:09",
+    "time": "1:09",
     "minute": 69,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:10",
+    "time": "1:10",
     "minute": 70,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:11",
+    "time": "1:11",
     "minute": 71,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:12",
+    "time": "1:12",
     "minute": 72,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:13",
+    "time": "1:13",
     "minute": 73,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:14",
+    "time": "1:14",
     "minute": 74,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:15",
+    "time": "1:15",
     "minute": 75,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:16",
+    "time": "1:16",
     "minute": 76,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:17",
+    "time": "1:17",
     "minute": 77,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:18",
+    "time": "1:18",
     "minute": 78,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:19",
+    "time": "1:19",
     "minute": 79,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:20",
+    "time": "1:20",
     "minute": 80,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:21",
+    "time": "1:21",
     "minute": 81,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:22",
+    "time": "1:22",
     "minute": 82,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:23",
+    "time": "1:23",
     "minute": 83,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:24",
+    "time": "1:24",
     "minute": 84,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:25",
+    "time": "1:25",
     "minute": 85,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:26",
+    "time": "1:26",
     "minute": 86,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:27",
+    "time": "1:27",
     "minute": 87,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:28",
+    "time": "1:28",
     "minute": 88,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:29",
+    "time": "1:29",
     "minute": 89,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:30",
+    "time": "1:30",
     "minute": 90,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:31",
+    "time": "1:31",
     "minute": 91,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:32",
+    "time": "1:32",
     "minute": 92,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:33",
+    "time": "1:33",
     "minute": 93,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:34",
+    "time": "1:34",
     "minute": 94,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:35",
+    "time": "1:35",
     "minute": 95,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:36",
+    "time": "1:36",
     "minute": 96,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:37",
+    "time": "1:37",
     "minute": 97,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:38",
+    "time": "1:38",
     "minute": 98,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:39",
+    "time": "1:39",
     "minute": 99,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:40",
+    "time": "1:40",
     "minute": 100,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:41",
+    "time": "1:41",
     "minute": 101,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:42",
+    "time": "1:42",
     "minute": 102,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:43",
+    "time": "1:43",
     "minute": 103,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:44",
+    "time": "1:44",
     "minute": 104,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:45",
+    "time": "1:45",
     "minute": 105,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:46",
+    "time": "1:46",
     "minute": 106,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:47",
+    "time": "1:47",
     "minute": 107,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:48",
+    "time": "1:48",
     "minute": 108,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:49",
+    "time": "1:49",
     "minute": 109,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:50",
+    "time": "1:50",
     "minute": 110,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:51",
+    "time": "1:51",
     "minute": 111,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:52",
+    "time": "1:52",
     "minute": 112,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:53",
+    "time": "1:53",
     "minute": 113,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:54",
+    "time": "1:54",
     "minute": 114,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:55",
+    "time": "1:55",
     "minute": 115,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:56",
+    "time": "1:56",
     "minute": 116,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:57",
+    "time": "1:57",
     "minute": 117,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:58",
+    "time": "1:58",
     "minute": 118,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "01:59",
+    "time": "1:59",
     "minute": 119,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:00",
+    "time": "2:00",
     "minute": 120,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:01",
+    "time": "2:01",
     "minute": 121,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:02",
+    "time": "2:02",
     "minute": 122,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:03",
+    "time": "2:03",
     "minute": 123,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:04",
+    "time": "2:04",
     "minute": 124,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:05",
+    "time": "2:05",
     "minute": 125,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:06",
+    "time": "2:06",
     "minute": 126,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:07",
+    "time": "2:07",
     "minute": 127,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:08",
+    "time": "2:08",
     "minute": 128,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:09",
+    "time": "2:09",
     "minute": 129,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:10",
+    "time": "2:10",
     "minute": 130,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:11",
+    "time": "2:11",
     "minute": 131,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:12",
+    "time": "2:12",
     "minute": 132,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:13",
+    "time": "2:13",
     "minute": 133,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:14",
+    "time": "2:14",
     "minute": 134,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:15",
+    "time": "2:15",
     "minute": 135,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:16",
+    "time": "2:16",
     "minute": 136,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:17",
+    "time": "2:17",
     "minute": 137,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:18",
+    "time": "2:18",
     "minute": 138,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:19",
+    "time": "2:19",
     "minute": 139,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:20",
+    "time": "2:20",
     "minute": 140,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:21",
+    "time": "2:21",
     "minute": 141,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:22",
+    "time": "2:22",
     "minute": 142,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:23",
+    "time": "2:23",
     "minute": 143,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:24",
+    "time": "2:24",
     "minute": 144,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:25",
+    "time": "2:25",
     "minute": 145,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:26",
+    "time": "2:26",
     "minute": 146,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:27",
+    "time": "2:27",
     "minute": 147,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:28",
+    "time": "2:28",
     "minute": 148,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:29",
+    "time": "2:29",
     "minute": 149,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:30",
+    "time": "2:30",
     "minute": 150,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:31",
+    "time": "2:31",
     "minute": 151,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:32",
+    "time": "2:32",
     "minute": 152,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:33",
+    "time": "2:33",
     "minute": 153,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:34",
+    "time": "2:34",
     "minute": 154,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:35",
+    "time": "2:35",
     "minute": 155,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:36",
+    "time": "2:36",
     "minute": 156,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:37",
+    "time": "2:37",
     "minute": 157,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:38",
+    "time": "2:38",
     "minute": 158,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:39",
+    "time": "2:39",
     "minute": 159,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:40",
+    "time": "2:40",
     "minute": 160,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:41",
+    "time": "2:41",
     "minute": 161,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:42",
+    "time": "2:42",
     "minute": 162,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:43",
+    "time": "2:43",
     "minute": 163,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:44",
+    "time": "2:44",
     "minute": 164,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:45",
+    "time": "2:45",
     "minute": 165,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:46",
+    "time": "2:46",
     "minute": 166,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:47",
+    "time": "2:47",
     "minute": 167,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:48",
+    "time": "2:48",
     "minute": 168,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:49",
+    "time": "2:49",
     "minute": 169,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:50",
+    "time": "2:50",
     "minute": 170,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:51",
+    "time": "2:51",
     "minute": 171,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:52",
+    "time": "2:52",
     "minute": 172,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:53",
+    "time": "2:53",
     "minute": 173,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:54",
+    "time": "2:54",
     "minute": 174,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:55",
+    "time": "2:55",
     "minute": 175,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:56",
+    "time": "2:56",
     "minute": 176,
     "arrivalRate": 10,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:57",
+    "time": "2:57",
     "minute": 177,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:58",
+    "time": "2:58",
     "minute": 178,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "02:59",
+    "time": "2:59",
     "minute": 179,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:00",
+    "time": "3:00",
     "minute": 180,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:01",
+    "time": "3:01",
     "minute": 181,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:02",
+    "time": "3:02",
     "minute": 182,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:03",
+    "time": "3:03",
     "minute": 183,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:04",
+    "time": "3:04",
     "minute": 184,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:05",
+    "time": "3:05",
     "minute": 185,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:06",
+    "time": "3:06",
     "minute": 186,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:07",
+    "time": "3:07",
     "minute": 187,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:08",
+    "time": "3:08",
     "minute": 188,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:09",
+    "time": "3:09",
     "minute": 189,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:10",
+    "time": "3:10",
     "minute": 190,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:11",
+    "time": "3:11",
     "minute": 191,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:12",
+    "time": "3:12",
     "minute": 192,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:13",
+    "time": "3:13",
     "minute": 193,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:14",
+    "time": "3:14",
     "minute": 194,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:15",
+    "time": "3:15",
     "minute": 195,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:16",
+    "time": "3:16",
     "minute": 196,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:17",
+    "time": "3:17",
     "minute": 197,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:18",
+    "time": "3:18",
     "minute": 198,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:19",
+    "time": "3:19",
     "minute": 199,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:20",
+    "time": "3:20",
     "minute": 200,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:21",
+    "time": "3:21",
     "minute": 201,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:22",
+    "time": "3:22",
     "minute": 202,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:23",
+    "time": "3:23",
     "minute": 203,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:24",
+    "time": "3:24",
     "minute": 204,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:25",
+    "time": "3:25",
     "minute": 205,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:26",
+    "time": "3:26",
     "minute": 206,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:27",
+    "time": "3:27",
     "minute": 207,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:28",
+    "time": "3:28",
     "minute": 208,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:29",
+    "time": "3:29",
     "minute": 209,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:30",
+    "time": "3:30",
     "minute": 210,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:31",
+    "time": "3:31",
     "minute": 211,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:32",
+    "time": "3:32",
     "minute": 212,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:33",
+    "time": "3:33",
     "minute": 213,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:34",
+    "time": "3:34",
     "minute": 214,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:35",
+    "time": "3:35",
     "minute": 215,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:36",
+    "time": "3:36",
     "minute": 216,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:37",
+    "time": "3:37",
     "minute": 217,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:38",
+    "time": "3:38",
     "minute": 218,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:39",
+    "time": "3:39",
     "minute": 219,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:40",
+    "time": "3:40",
     "minute": 220,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:41",
+    "time": "3:41",
     "minute": 221,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:42",
+    "time": "3:42",
     "minute": 222,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:43",
+    "time": "3:43",
     "minute": 223,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:44",
+    "time": "3:44",
     "minute": 224,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:45",
+    "time": "3:45",
     "minute": 225,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:46",
+    "time": "3:46",
     "minute": 226,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:47",
+    "time": "3:47",
     "minute": 227,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:48",
+    "time": "3:48",
     "minute": 228,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:49",
+    "time": "3:49",
     "minute": 229,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:50",
+    "time": "3:50",
     "minute": 230,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:51",
+    "time": "3:51",
     "minute": 231,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:52",
+    "time": "3:52",
     "minute": 232,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:53",
+    "time": "3:53",
     "minute": 233,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:54",
+    "time": "3:54",
     "minute": 234,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:55",
+    "time": "3:55",
     "minute": 235,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:56",
+    "time": "3:56",
     "minute": 236,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:57",
+    "time": "3:57",
     "minute": 237,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:58",
+    "time": "3:58",
     "minute": 238,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "03:59",
+    "time": "3:59",
     "minute": 239,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:00",
+    "time": "4:00",
     "minute": 240,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:01",
+    "time": "4:01",
     "minute": 241,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:02",
+    "time": "4:02",
     "minute": 242,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:03",
+    "time": "4:03",
     "minute": 243,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:04",
+    "time": "4:04",
     "minute": 244,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:05",
+    "time": "4:05",
     "minute": 245,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:06",
+    "time": "4:06",
     "minute": 246,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:07",
+    "time": "4:07",
     "minute": 247,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:08",
+    "time": "4:08",
     "minute": 248,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:09",
+    "time": "4:09",
     "minute": 249,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:10",
+    "time": "4:10",
     "minute": 250,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:11",
+    "time": "4:11",
     "minute": 251,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:12",
+    "time": "4:12",
     "minute": 252,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:13",
+    "time": "4:13",
     "minute": 253,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:14",
+    "time": "4:14",
     "minute": 254,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:15",
+    "time": "4:15",
     "minute": 255,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:16",
+    "time": "4:16",
     "minute": 256,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:17",
+    "time": "4:17",
     "minute": 257,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:18",
+    "time": "4:18",
     "minute": 258,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:19",
+    "time": "4:19",
     "minute": 259,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:20",
+    "time": "4:20",
     "minute": 260,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:21",
+    "time": "4:21",
     "minute": 261,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:22",
+    "time": "4:22",
     "minute": 262,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:23",
+    "time": "4:23",
     "minute": 263,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:24",
+    "time": "4:24",
     "minute": 264,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:25",
+    "time": "4:25",
     "minute": 265,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:26",
+    "time": "4:26",
     "minute": 266,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:27",
+    "time": "4:27",
     "minute": 267,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:28",
+    "time": "4:28",
     "minute": 268,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:29",
+    "time": "4:29",
     "minute": 269,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:30",
+    "time": "4:30",
     "minute": 270,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:31",
+    "time": "4:31",
     "minute": 271,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:32",
+    "time": "4:32",
     "minute": 272,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:33",
+    "time": "4:33",
     "minute": 273,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:34",
+    "time": "4:34",
     "minute": 274,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:35",
+    "time": "4:35",
     "minute": 275,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:36",
+    "time": "4:36",
     "minute": 276,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:37",
+    "time": "4:37",
     "minute": 277,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:38",
+    "time": "4:38",
     "minute": 278,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:39",
+    "time": "4:39",
     "minute": 279,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:40",
+    "time": "4:40",
     "minute": 280,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:41",
+    "time": "4:41",
     "minute": 281,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:42",
+    "time": "4:42",
     "minute": 282,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:43",
+    "time": "4:43",
     "minute": 283,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:44",
+    "time": "4:44",
     "minute": 284,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:45",
+    "time": "4:45",
     "minute": 285,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:46",
+    "time": "4:46",
     "minute": 286,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:47",
+    "time": "4:47",
     "minute": 287,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:48",
+    "time": "4:48",
     "minute": 288,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:49",
+    "time": "4:49",
     "minute": 289,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:50",
+    "time": "4:50",
     "minute": 290,
     "arrivalRate": 9,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:51",
+    "time": "4:51",
     "minute": 291,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:52",
+    "time": "4:52",
     "minute": 292,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:53",
+    "time": "4:53",
     "minute": 293,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:54",
+    "time": "4:54",
     "minute": 294,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:55",
+    "time": "4:55",
     "minute": 295,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:56",
+    "time": "4:56",
     "minute": 296,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:57",
+    "time": "4:57",
     "minute": 297,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:58",
+    "time": "4:58",
     "minute": 298,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "04:59",
+    "time": "4:59",
     "minute": 299,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:00",
+    "time": "5:00",
     "minute": 300,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:01",
+    "time": "5:01",
     "minute": 301,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:02",
+    "time": "5:02",
     "minute": 302,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:03",
+    "time": "5:03",
     "minute": 303,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:04",
+    "time": "5:04",
     "minute": 304,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:05",
+    "time": "5:05",
     "minute": 305,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:06",
+    "time": "5:06",
     "minute": 306,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:07",
+    "time": "5:07",
     "minute": 307,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:08",
+    "time": "5:08",
     "minute": 308,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:09",
+    "time": "5:09",
     "minute": 309,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:10",
+    "time": "5:10",
     "minute": 310,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:11",
+    "time": "5:11",
     "minute": 311,
     "arrivalRate": 18,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:12",
+    "time": "5:12",
     "minute": 312,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:13",
+    "time": "5:13",
     "minute": 313,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:14",
+    "time": "5:14",
     "minute": 314,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:15",
+    "time": "5:15",
     "minute": 315,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:16",
+    "time": "5:16",
     "minute": 316,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:17",
+    "time": "5:17",
     "minute": 317,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:18",
+    "time": "5:18",
     "minute": 318,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:19",
+    "time": "5:19",
     "minute": 319,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:20",
+    "time": "5:20",
     "minute": 320,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:21",
+    "time": "5:21",
     "minute": 321,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:22",
+    "time": "5:22",
     "minute": 322,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:23",
+    "time": "5:23",
     "minute": 323,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:24",
+    "time": "5:24",
     "minute": 324,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:25",
+    "time": "5:25",
     "minute": 325,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:26",
+    "time": "5:26",
     "minute": 326,
     "arrivalRate": 18,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:27",
+    "time": "5:27",
     "minute": 327,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:28",
+    "time": "5:28",
     "minute": 328,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:29",
+    "time": "5:29",
     "minute": 329,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:30",
+    "time": "5:30",
     "minute": 330,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:31",
+    "time": "5:31",
     "minute": 331,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:32",
+    "time": "5:32",
     "minute": 332,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:33",
+    "time": "5:33",
     "minute": 333,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:34",
+    "time": "5:34",
     "minute": 334,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:35",
+    "time": "5:35",
     "minute": 335,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:36",
+    "time": "5:36",
     "minute": 336,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:37",
+    "time": "5:37",
     "minute": 337,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:38",
+    "time": "5:38",
     "minute": 338,
     "arrivalRate": 11,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:39",
+    "time": "5:39",
     "minute": 339,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:40",
+    "time": "5:40",
     "minute": 340,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:41",
+    "time": "5:41",
     "minute": 341,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:42",
+    "time": "5:42",
     "minute": 342,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:43",
+    "time": "5:43",
     "minute": 343,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:44",
+    "time": "5:44",
     "minute": 344,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:45",
+    "time": "5:45",
     "minute": 345,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:46",
+    "time": "5:46",
     "minute": 346,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:47",
+    "time": "5:47",
     "minute": 347,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:48",
+    "time": "5:48",
     "minute": 348,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:49",
+    "time": "5:49",
     "minute": 349,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:50",
+    "time": "5:50",
     "minute": 350,
     "arrivalRate": 16,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:51",
+    "time": "5:51",
     "minute": 351,
     "arrivalRate": 17,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:52",
+    "time": "5:52",
     "minute": 352,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:53",
+    "time": "5:53",
     "minute": 353,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:54",
+    "time": "5:54",
     "minute": 354,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:55",
+    "time": "5:55",
     "minute": 355,
     "arrivalRate": 15,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:56",
+    "time": "5:56",
     "minute": 356,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:57",
+    "time": "5:57",
     "minute": 357,
     "arrivalRate": 14,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:58",
+    "time": "5:58",
     "minute": 358,
     "arrivalRate": 12,
     "phase": "Off-Peak"
   },
   {
-    "time": "05:59",
+    "time": "5:59",
     "minute": 359,
     "arrivalRate": 13,
     "phase": "Off-Peak"
   },
   {
-    "time": "06:00",
+    "time": "6:00",
     "minute": 360,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:01",
+    "time": "6:01",
     "minute": 361,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:02",
+    "time": "6:02",
     "minute": 362,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:03",
+    "time": "6:03",
     "minute": 363,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:04",
+    "time": "6:04",
     "minute": 364,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "06:05",
+    "time": "6:05",
     "minute": 365,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:06",
+    "time": "6:06",
     "minute": 366,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "06:07",
+    "time": "6:07",
     "minute": 367,
     "arrivalRate": 34,
     "phase": "Normal"
   },
   {
-    "time": "06:08",
+    "time": "6:08",
     "minute": 368,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:09",
+    "time": "6:09",
     "minute": 369,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "06:10",
+    "time": "6:10",
     "minute": 370,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "06:11",
+    "time": "6:11",
     "minute": 371,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "06:12",
+    "time": "6:12",
     "minute": 372,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "06:13",
+    "time": "6:13",
     "minute": 373,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "06:14",
+    "time": "6:14",
     "minute": 374,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:15",
+    "time": "6:15",
     "minute": 375,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:16",
+    "time": "6:16",
     "minute": 376,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:17",
+    "time": "6:17",
     "minute": 377,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:18",
+    "time": "6:18",
     "minute": 378,
     "arrivalRate": 32,
     "phase": "Normal"
   },
   {
-    "time": "06:19",
+    "time": "6:19",
     "minute": 379,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "06:20",
+    "time": "6:20",
     "minute": 380,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:21",
+    "time": "6:21",
     "minute": 381,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:22",
+    "time": "6:22",
     "minute": 382,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "06:23",
+    "time": "6:23",
     "minute": 383,
     "arrivalRate": 31,
     "phase": "Normal"
   },
   {
-    "time": "06:24",
+    "time": "6:24",
     "minute": 384,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "06:25",
+    "time": "6:25",
     "minute": 385,
     "arrivalRate": 48,
     "phase": "Normal"
   },
   {
-    "time": "06:26",
+    "time": "6:26",
     "minute": 386,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:27",
+    "time": "6:27",
     "minute": 387,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:28",
+    "time": "6:28",
     "minute": 388,
     "arrivalRate": 30,
     "phase": "Normal"
   },
   {
-    "time": "06:29",
+    "time": "6:29",
     "minute": 389,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "06:30",
+    "time": "6:30",
     "minute": 390,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:31",
+    "time": "6:31",
     "minute": 391,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:32",
+    "time": "6:32",
     "minute": 392,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:33",
+    "time": "6:33",
     "minute": 393,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "06:34",
+    "time": "6:34",
     "minute": 394,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:35",
+    "time": "6:35",
     "minute": 395,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:36",
+    "time": "6:36",
     "minute": 396,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "06:37",
+    "time": "6:37",
     "minute": 397,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "06:38",
+    "time": "6:38",
     "minute": 398,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:39",
+    "time": "6:39",
     "minute": 399,
     "arrivalRate": 29,
     "phase": "Normal"
   },
   {
-    "time": "06:40",
+    "time": "6:40",
     "minute": 400,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:41",
+    "time": "6:41",
     "minute": 401,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:42",
+    "time": "6:42",
     "minute": 402,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "06:43",
+    "time": "6:43",
     "minute": 403,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:44",
+    "time": "6:44",
     "minute": 404,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:45",
+    "time": "6:45",
     "minute": 405,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:46",
+    "time": "6:46",
     "minute": 406,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:47",
+    "time": "6:47",
     "minute": 407,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:48",
+    "time": "6:48",
     "minute": 408,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:49",
+    "time": "6:49",
     "minute": 409,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:50",
+    "time": "6:50",
     "minute": 410,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "06:51",
+    "time": "6:51",
     "minute": 411,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "06:52",
+    "time": "6:52",
     "minute": 412,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "06:53",
+    "time": "6:53",
     "minute": 413,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "06:54",
+    "time": "6:54",
     "minute": 414,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:55",
+    "time": "6:55",
     "minute": 415,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "06:56",
+    "time": "6:56",
     "minute": 416,
     "arrivalRate": 34,
     "phase": "Normal"
   },
   {
-    "time": "06:57",
+    "time": "6:57",
     "minute": 417,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "06:58",
+    "time": "6:58",
     "minute": 418,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "06:59",
+    "time": "6:59",
     "minute": 419,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "07:00",
+    "time": "7:00",
     "minute": 420,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:01",
+    "time": "7:01",
     "minute": 421,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "07:02",
+    "time": "7:02",
     "minute": 422,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:03",
+    "time": "7:03",
     "minute": 423,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:04",
+    "time": "7:04",
     "minute": 424,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:05",
+    "time": "7:05",
     "minute": 425,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:06",
+    "time": "7:06",
     "minute": 426,
     "arrivalRate": 47,
     "phase": "Normal"
   },
   {
-    "time": "07:07",
+    "time": "7:07",
     "minute": 427,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:08",
+    "time": "7:08",
     "minute": 428,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "07:09",
+    "time": "7:09",
     "minute": 429,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "07:10",
+    "time": "7:10",
     "minute": 430,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:11",
+    "time": "7:11",
     "minute": 431,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "07:12",
+    "time": "7:12",
     "minute": 432,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "07:13",
+    "time": "7:13",
     "minute": 433,
     "arrivalRate": 33,
     "phase": "Normal"
   },
   {
-    "time": "07:14",
+    "time": "7:14",
     "minute": 434,
     "arrivalRate": 30,
     "phase": "Normal"
   },
   {
-    "time": "07:15",
+    "time": "7:15",
     "minute": 435,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "07:16",
+    "time": "7:16",
     "minute": 436,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "07:17",
+    "time": "7:17",
     "minute": 437,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "07:18",
+    "time": "7:18",
     "minute": 438,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "07:19",
+    "time": "7:19",
     "minute": 439,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "07:20",
+    "time": "7:20",
     "minute": 440,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "07:21",
+    "time": "7:21",
     "minute": 441,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "07:22",
+    "time": "7:22",
     "minute": 442,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:23",
+    "time": "7:23",
     "minute": 443,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "07:24",
+    "time": "7:24",
     "minute": 444,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "07:25",
+    "time": "7:25",
     "minute": 445,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:26",
+    "time": "7:26",
     "minute": 446,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "07:27",
+    "time": "7:27",
     "minute": 447,
     "arrivalRate": 34,
     "phase": "Normal"
   },
   {
-    "time": "07:28",
+    "time": "7:28",
     "minute": 448,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "07:29",
+    "time": "7:29",
     "minute": 449,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:30",
+    "time": "7:30",
     "minute": 450,
     "arrivalRate": 50,
     "phase": "Normal"
   },
   {
-    "time": "07:31",
+    "time": "7:31",
     "minute": 451,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:32",
+    "time": "7:32",
     "minute": 452,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:33",
+    "time": "7:33",
     "minute": 453,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "07:34",
+    "time": "7:34",
     "minute": 454,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "07:35",
+    "time": "7:35",
     "minute": 455,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "07:36",
+    "time": "7:36",
     "minute": 456,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "07:37",
+    "time": "7:37",
     "minute": 457,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:38",
+    "time": "7:38",
     "minute": 458,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "07:39",
+    "time": "7:39",
     "minute": 459,
     "arrivalRate": 52,
     "phase": "Normal"
   },
   {
-    "time": "07:40",
+    "time": "7:40",
     "minute": 460,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "07:41",
+    "time": "7:41",
     "minute": 461,
     "arrivalRate": 33,
     "phase": "Normal"
   },
   {
-    "time": "07:42",
+    "time": "7:42",
     "minute": 462,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "07:43",
+    "time": "7:43",
     "minute": 463,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "07:44",
+    "time": "7:44",
     "minute": 464,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "07:45",
+    "time": "7:45",
     "minute": 465,
     "arrivalRate": 48,
     "phase": "Normal"
   },
   {
-    "time": "07:46",
+    "time": "7:46",
     "minute": 466,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:47",
+    "time": "7:47",
     "minute": 467,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "07:48",
+    "time": "7:48",
     "minute": 468,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "07:49",
+    "time": "7:49",
     "minute": 469,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:50",
+    "time": "7:50",
     "minute": 470,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:51",
+    "time": "7:51",
     "minute": 471,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:52",
+    "time": "7:52",
     "minute": 472,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "07:53",
+    "time": "7:53",
     "minute": 473,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:54",
+    "time": "7:54",
     "minute": 474,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "07:55",
+    "time": "7:55",
     "minute": 475,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "07:56",
+    "time": "7:56",
     "minute": 476,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "07:57",
+    "time": "7:57",
     "minute": 477,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "07:58",
+    "time": "7:58",
     "minute": 478,
     "arrivalRate": 34,
     "phase": "Normal"
   },
   {
-    "time": "07:59",
+    "time": "7:59",
     "minute": 479,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:00",
+    "time": "8:00",
     "minute": 480,
     "arrivalRate": 48,
     "phase": "Normal"
   },
   {
-    "time": "08:01",
+    "time": "8:01",
     "minute": 481,
     "arrivalRate": 33,
     "phase": "Normal"
   },
   {
-    "time": "08:02",
+    "time": "8:02",
     "minute": 482,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:03",
+    "time": "8:03",
     "minute": 483,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:04",
+    "time": "8:04",
     "minute": 484,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:05",
+    "time": "8:05",
     "minute": 485,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:06",
+    "time": "8:06",
     "minute": 486,
     "arrivalRate": 44,
     "phase": "Normal"
   },
   {
-    "time": "08:07",
+    "time": "8:07",
     "minute": 487,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:08",
+    "time": "8:08",
     "minute": 488,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "08:09",
+    "time": "8:09",
     "minute": 489,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:10",
+    "time": "8:10",
     "minute": 490,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:11",
+    "time": "8:11",
     "minute": 491,
     "arrivalRate": 34,
     "phase": "Normal"
   },
   {
-    "time": "08:12",
+    "time": "8:12",
     "minute": 492,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:13",
+    "time": "8:13",
     "minute": 493,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:14",
+    "time": "8:14",
     "minute": 494,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:15",
+    "time": "8:15",
     "minute": 495,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "08:16",
+    "time": "8:16",
     "minute": 496,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:17",
+    "time": "8:17",
     "minute": 497,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:18",
+    "time": "8:18",
     "minute": 498,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "08:19",
+    "time": "8:19",
     "minute": 499,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:20",
+    "time": "8:20",
     "minute": 500,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:21",
+    "time": "8:21",
     "minute": 501,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "08:22",
+    "time": "8:22",
     "minute": 502,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:23",
+    "time": "8:23",
     "minute": 503,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "08:24",
+    "time": "8:24",
     "minute": 504,
     "arrivalRate": 32,
     "phase": "Normal"
   },
   {
-    "time": "08:25",
+    "time": "8:25",
     "minute": 505,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "08:26",
+    "time": "8:26",
     "minute": 506,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "08:27",
+    "time": "8:27",
     "minute": 507,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:28",
+    "time": "8:28",
     "minute": 508,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "08:29",
+    "time": "8:29",
     "minute": 509,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "08:30",
+    "time": "8:30",
     "minute": 510,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "08:31",
+    "time": "8:31",
     "minute": 511,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:32",
+    "time": "8:32",
     "minute": 512,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:33",
+    "time": "8:33",
     "minute": 513,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "08:34",
+    "time": "8:34",
     "minute": 514,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "08:35",
+    "time": "8:35",
     "minute": 515,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:36",
+    "time": "8:36",
     "minute": 516,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:37",
+    "time": "8:37",
     "minute": 517,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "08:38",
+    "time": "8:38",
     "minute": 518,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "08:39",
+    "time": "8:39",
     "minute": 519,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "08:40",
+    "time": "8:40",
     "minute": 520,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "08:41",
+    "time": "8:41",
     "minute": 521,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "08:42",
+    "time": "8:42",
     "minute": 522,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "08:43",
+    "time": "8:43",
     "minute": 523,
     "arrivalRate": 33,
     "phase": "Normal"
   },
   {
-    "time": "08:44",
+    "time": "8:44",
     "minute": 524,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "08:45",
+    "time": "8:45",
     "minute": 525,
     "arrivalRate": 31,
     "phase": "Normal"
   },
   {
-    "time": "08:46",
+    "time": "8:46",
     "minute": 526,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:47",
+    "time": "8:47",
     "minute": 527,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:48",
+    "time": "8:48",
     "minute": 528,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:49",
+    "time": "8:49",
     "minute": 529,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "08:50",
+    "time": "8:50",
     "minute": 530,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:51",
+    "time": "8:51",
     "minute": 531,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "08:52",
+    "time": "8:52",
     "minute": 532,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "08:53",
+    "time": "8:53",
     "minute": 533,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "08:54",
+    "time": "8:54",
     "minute": 534,
     "arrivalRate": 31,
     "phase": "Normal"
   },
   {
-    "time": "08:55",
+    "time": "8:55",
     "minute": 535,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "08:56",
+    "time": "8:56",
     "minute": 536,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:57",
+    "time": "8:57",
     "minute": 537,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "08:58",
+    "time": "8:58",
     "minute": 538,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "08:59",
+    "time": "8:59",
     "minute": 539,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:00",
+    "time": "9:00",
     "minute": 540,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "09:01",
+    "time": "9:01",
     "minute": 541,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "09:02",
+    "time": "9:02",
     "minute": 542,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "09:03",
+    "time": "9:03",
     "minute": 543,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:04",
+    "time": "9:04",
     "minute": 544,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:05",
+    "time": "9:05",
     "minute": 545,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:06",
+    "time": "9:06",
     "minute": 546,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "09:07",
+    "time": "9:07",
     "minute": 547,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "09:08",
+    "time": "9:08",
     "minute": 548,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "09:09",
+    "time": "9:09",
     "minute": 549,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:10",
+    "time": "9:10",
     "minute": 550,
     "arrivalRate": 35,
     "phase": "Normal"
   },
   {
-    "time": "09:11",
+    "time": "9:11",
     "minute": 551,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:12",
+    "time": "9:12",
     "minute": 552,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:13",
+    "time": "9:13",
     "minute": 553,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:14",
+    "time": "9:14",
     "minute": 554,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "09:15",
+    "time": "9:15",
     "minute": 555,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:16",
+    "time": "9:16",
     "minute": 556,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:17",
+    "time": "9:17",
     "minute": 557,
     "arrivalRate": 31,
     "phase": "Normal"
   },
   {
-    "time": "09:18",
+    "time": "9:18",
     "minute": 558,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "09:19",
+    "time": "9:19",
     "minute": 559,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:20",
+    "time": "9:20",
     "minute": 560,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:21",
+    "time": "9:21",
     "minute": 561,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:22",
+    "time": "9:22",
     "minute": 562,
     "arrivalRate": 26,
     "phase": "Normal"
   },
   {
-    "time": "09:23",
+    "time": "9:23",
     "minute": 563,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "09:24",
+    "time": "9:24",
     "minute": 564,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:25",
+    "time": "9:25",
     "minute": 565,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "09:26",
+    "time": "9:26",
     "minute": 566,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:27",
+    "time": "9:27",
     "minute": 567,
     "arrivalRate": 43,
     "phase": "Normal"
   },
   {
-    "time": "09:28",
+    "time": "9:28",
     "minute": 568,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "09:29",
+    "time": "9:29",
     "minute": 569,
     "arrivalRate": 45,
     "phase": "Normal"
   },
   {
-    "time": "09:30",
+    "time": "9:30",
     "minute": 570,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:31",
+    "time": "9:31",
     "minute": 571,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:32",
+    "time": "9:32",
     "minute": 572,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "09:33",
+    "time": "9:33",
     "minute": 573,
     "arrivalRate": 46,
     "phase": "Normal"
   },
   {
-    "time": "09:34",
+    "time": "9:34",
     "minute": 574,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "09:35",
+    "time": "9:35",
     "minute": 575,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:36",
+    "time": "9:36",
     "minute": 576,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:37",
+    "time": "9:37",
     "minute": 577,
     "arrivalRate": 48,
     "phase": "Normal"
   },
   {
-    "time": "09:38",
+    "time": "9:38",
     "minute": 578,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:39",
+    "time": "9:39",
     "minute": 579,
     "arrivalRate": 47,
     "phase": "Normal"
   },
   {
-    "time": "09:40",
+    "time": "9:40",
     "minute": 580,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:41",
+    "time": "9:41",
     "minute": 581,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "09:42",
+    "time": "9:42",
     "minute": 582,
     "arrivalRate": 41,
     "phase": "Normal"
   },
   {
-    "time": "09:43",
+    "time": "9:43",
     "minute": 583,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "09:44",
+    "time": "9:44",
     "minute": 584,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:45",
+    "time": "9:45",
     "minute": 585,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "09:46",
+    "time": "9:46",
     "minute": 586,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:47",
+    "time": "9:47",
     "minute": 587,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:48",
+    "time": "9:48",
     "minute": 588,
     "arrivalRate": 32,
     "phase": "Normal"
   },
   {
-    "time": "09:49",
+    "time": "9:49",
     "minute": 589,
     "arrivalRate": 47,
     "phase": "Normal"
   },
   {
-    "time": "09:50",
+    "time": "9:50",
     "minute": 590,
     "arrivalRate": 42,
     "phase": "Normal"
   },
   {
-    "time": "09:51",
+    "time": "9:51",
     "minute": 591,
     "arrivalRate": 40,
     "phase": "Normal"
   },
   {
-    "time": "09:52",
+    "time": "9:52",
     "minute": 592,
     "arrivalRate": 39,
     "phase": "Normal"
   },
   {
-    "time": "09:53",
+    "time": "9:53",
     "minute": 593,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "09:54",
+    "time": "9:54",
     "minute": 594,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:55",
+    "time": "9:55",
     "minute": 595,
     "arrivalRate": 37,
     "phase": "Normal"
   },
   {
-    "time": "09:56",
+    "time": "9:56",
     "minute": 596,
     "arrivalRate": 36,
     "phase": "Normal"
   },
   {
-    "time": "09:57",
+    "time": "9:57",
     "minute": 597,
     "arrivalRate": 38,
     "phase": "Normal"
   },
   {
-    "time": "09:58",
+    "time": "9:58",
     "minute": 598,
     "arrivalRate": 48,
     "phase": "Normal"
   },
   {
-    "time": "09:59",
+    "time": "9:59",
     "minute": 599,
     "arrivalRate": 31,
     "phase": "Normal"
