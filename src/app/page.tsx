@@ -13,6 +13,7 @@ export default function Dashboard() {
   const [mu, setMu] = useState<number>(20);
   const [c, setC] = useState<number>(10);
   const [showDatasetModal, setShowDatasetModal] = useState(false);
+  const [showOnlyCrashes, setShowOnlyCrashes] = useState(false);
   const [trafficData, setTrafficData] = useState<TrafficDataPoint[]>([]);
   const [isClient, setIsClient] = useState(false);
 
@@ -364,10 +365,21 @@ export default function Dashboard() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000]/80 backdrop-blur-sm p-4">
           <div className="bg-[#0A0A0A] border border-[#333333] w-full max-w-[95vw] max-h-[85vh] flex flex-col shadow-2xl">
             <div className="flex justify-between items-center p-4 border-b border-[#333333]">
-              <h3 className="text-sm font-mono text-[#FFFFFF] uppercase tracking-widest flex items-center gap-2">
-                <Database size={16} className="text-[#FFDD00]" />
-                Simulated Traffic Dataset (Snapshot)
-              </h3>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                <h3 className="text-sm font-mono text-[#FFFFFF] uppercase tracking-widest flex items-center gap-2">
+                  <Database size={16} className="text-[#FFDD00]" />
+                  Simulated Traffic Dataset (Snapshot)
+                </h3>
+                <label className="flex items-center gap-2 text-xs font-mono text-[#888888] cursor-pointer hover:text-[#FFFFFF] transition-colors sm:border-l sm:border-[#333333] sm:pl-4">
+                  <input 
+                    type="checkbox" 
+                    checked={showOnlyCrashes}
+                    onChange={(e) => setShowOnlyCrashes(e.target.checked)}
+                    className="accent-[#FFDD00]"
+                  />
+                  Show Unstable Only (ρ ≥ 1)
+                </label>
+              </div>
               <button onClick={() => setShowDatasetModal(false)} className="text-[#888888] hover:text-[#FFFFFF] transition-colors">
                 <X size={20} />
               </button>
@@ -383,7 +395,7 @@ export default function Dashboard() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#222222]">
-                  {chartData.map((row, idx) => {
+                  {(showOnlyCrashes ? chartData.filter(d => !d.isStable) : chartData).map((row, idx) => {
                     return (
                       <tr key={idx} className="hover:bg-[#111111] transition-colors">
                         <td className="p-3 px-4 text-[#888888] border-r border-[#222222]">2026-06-20 {row.time}:00</td>
@@ -397,7 +409,7 @@ export default function Dashboard() {
               </table>
             </div>
             <div className="p-3 border-t border-[#333333] text-xs text-center text-[#888888] font-mono uppercase tracking-wider">
-              Showing all {chartData.length} generated traffic points
+              Showing {showOnlyCrashes ? chartData.filter(d => !d.isStable).length : chartData.length} generated traffic points
             </div>
           </div>
         </div>
