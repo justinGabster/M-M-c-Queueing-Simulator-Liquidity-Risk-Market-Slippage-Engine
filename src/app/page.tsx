@@ -5,12 +5,13 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
   ReferenceArea, Brush, Legend, ReferenceLine
 } from 'recharts';
-import { Settings, AlertTriangle, CheckCircle2, Activity, Zap } from 'lucide-react';
+import { Settings, AlertTriangle, CheckCircle2, Activity, Zap, Database, X } from 'lucide-react';
 import { calculateMMc, generateTrafficData, TrafficDataPoint } from '@/lib/queueingEngine';
 
 export default function Dashboard() {
   const [mu, setMu] = useState<number>(20);
   const [c, setC] = useState<number>(10);
+  const [showDatasetModal, setShowDatasetModal] = useState(false);
   const [trafficData, setTrafficData] = useState<TrafficDataPoint[]>([]);
   const [isClient, setIsClient] = useState(false);
 
@@ -72,12 +73,9 @@ export default function Dashboard() {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       
-      // Dynamic logic to strictly match Paper Sections 8 & 9 findings
-      // Liquidity Risk / Idling Costs: HIGH when capital is unutilized (low rho)
       const getLiquidityRisk = (rho: number, isStable: boolean) => !isStable ? "MINIMAL" : (rho <= 0.25 ? "HIGH" : (rho <= 0.7 ? "MODERATE" : "LOW"));
       const getIdlingCosts = (rho: number, isStable: boolean) => !isStable ? "MINIMAL" : (rho <= 0.25 ? "HIGH" : (rho <= 0.7 ? "MODERATE" : "LOW"));
 
-      // Slippage Risk / Tx Latency: HIGH when wait times (wq) are high or system crashes
       const getSlippageRisk = (wq: number, isStable: boolean) => !isStable ? "CRITICAL" : (wq >= 0.5 ? "HIGH" : (wq >= 0.05 ? "MODERATE" : "LOW"));
       const getLatencyStatus = (wq: number, isStable: boolean) => !isStable ? "INFINITE" : (wq >= 0.5 ? "HIGH" : (wq >= 0.05 ? "MODERATE" : "OPTIMAL"));
 
@@ -161,7 +159,7 @@ export default function Dashboard() {
         </button>
       </header>
 
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-4 gap-4 min-h-0">
+      <main className="flex-1 grid grid-cols-1 lg:grid-cols-4 gap-4 min-h-0">
         
         {/* Left Col: Controls & Metrics */}
         <div className="flex flex-col gap-4 lg:col-span-1 overflow-y-auto custom-scrollbar pr-1 pb-1">
@@ -235,15 +233,21 @@ export default function Dashboard() {
                   </p>
                 </div>
 
-                <div className={`mt-1 p-3 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
-                  <p className="text-[10px] opacity-70 uppercase tracking-widest mb-1">Network State</p>
-                  <div className="flex items-center gap-2">
-                    {aggMetrics.isStable ? <CheckCircle2 size={16} className="text-[#00FF41]" /> : <AlertTriangle size={16} className="text-red-500" />}
-                    <span className={`text-base font-bold tracking-wider ${aggMetrics.isStable ? 'text-[#00FF41]' : 'text-red-500'}`}>
-                      {aggMetrics.isStable ? 'OPTIMAL' : 'CRITICAL FAILURE'}
-                    </span>
-                  </div>
+                <div className={`mt-2 p-4 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
+                  <p className="text-xs opacity-70 uppercase tracking-wide mb-1">Network State</p>
+                  <p className={`font-bold tracking-widest flex items-center gap-2 ${aggMetrics.isStable ? 'text-[#00FF41]' : 'text-red-500'}`}>
+                    {aggMetrics.isStable ? <CheckCircle2 size={16} /> : <AlertTriangle size={16} />}
+                    {aggMetrics.isStable ? 'OPTIMAL' : 'CRITICAL OVERLOAD'}
+                  </p>
                 </div>
+
+                <button 
+                  onClick={() => setShowDatasetModal(true)}
+                  className="mt-4 w-full py-2.5 border border-[#333333] hover:border-[#FFDD00] bg-[#000000] hover:bg-[#1C1C1C] transition-all text-[10px] font-mono text-[#FFFFFF] hover:text-[#FFDD00] uppercase tracking-widest flex items-center justify-center gap-2"
+                >
+                  <Database size={14} />
+                  View Sample Dataset
+                </button>
               </div>
             )}
           </div>
@@ -281,10 +285,9 @@ export default function Dashboard() {
               <LineChart data={chartData} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="1 4" stroke="#333333" vertical={false} />
                 
-                {/* Partitions with strict palette */}
-                <ReferenceArea x1={0} x2={360} fill="#FFFFFF" fillOpacity={0.03} /> {/* Off-Peak */}
-                <ReferenceArea x1={660} x2={840} fill="#FFFFFF" fillOpacity={0.08} /> {/* Lunch */}
-                <ReferenceArea x1={1080} x2={1260} fill="#FFDD00" fillOpacity={0.15} /> {/* Payday */}
+                <ReferenceArea x1={0} x2={360} fill="#FFFFFF" fillOpacity={0.03} /> 
+                <ReferenceArea x1={660} x2={840} fill="#FFFFFF" fillOpacity={0.08} /> 
+                <ReferenceArea x1={1080} x2={1260} fill="#FFDD00" fillOpacity={0.15} /> 
                 <ReferenceLine y={2} stroke="#EF4444" strokeDasharray="4 4" strokeWidth={1} label={{ position: 'insideTopLeft', value: '2.0s', fill: '#EF4444', fontSize: 10, fontFamily: 'monospace' }} />
                 
                 <XAxis 
@@ -315,7 +318,6 @@ export default function Dashboard() {
                   isAnimationActive={false}
                 />
 
-                {/* Red line for instability indicator */}
                 <Line 
                   type="step" 
                   dataKey={(d) => d.isStable ? null : 3} 
@@ -336,7 +338,30 @@ export default function Dashboard() {
             </ResponsiveContainer>
           </div>
         </div>
-      </div>
+      </main>
+
+      {/* Dataset Modal */}
+      {showDatasetModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000]/80 backdrop-blur-sm p-4">
+          <div className="bg-[#0A0A0A] border border-[#333333] w-full max-w-4xl max-h-[80vh] flex flex-col shadow-2xl">
+            <div className="flex justify-between items-center p-4 border-b border-[#333333]">
+              <h3 className="text-sm font-mono text-[#FFFFFF] uppercase tracking-widest flex items-center gap-2">
+                <Database size={16} className="text-[#FFDD00]" />
+                Simulated Traffic Dataset (Snapshot)
+              </h3>
+              <button onClick={() => setShowDatasetModal(false)} className="text-[#888888] hover:text-[#FFFFFF] transition-colors">
+                <X size={20} />
+              </button>
+            </div>
+            <div className="p-4 overflow-auto custom-scrollbar flex-1 text-xs font-mono text-[#888888] bg-[#000000]">
+              <pre>{JSON.stringify(chartData.slice(0, 100), null, 2)}</pre>
+            </div>
+            <div className="p-3 border-t border-[#333333] text-[10px] text-center text-[#555555] font-mono uppercase tracking-wider">
+              Showing first 100 entries of {chartData.length} total generated traffic points
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
