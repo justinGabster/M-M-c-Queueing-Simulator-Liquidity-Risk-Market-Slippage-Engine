@@ -107,8 +107,9 @@ export default function Dashboard() {
 
       return (
         <div className="bg-[#000000] border border-[#FFDD00] p-4 text-sm shadow-[0_0_15px_rgba(255,221,0,0.3)] min-w-[260px]">
-          <p className="font-mono text-[#FFFFFF] font-bold mb-3 uppercase tracking-wider border-b border-[#333] pb-2">
-            {data.time} // {data.phase}
+          <p className="font-mono text-[#FFFFFF] font-bold mb-3 uppercase tracking-wider border-b border-[#333] pb-2 flex items-center justify-between">
+            <span>{data.time}:00.<span className="text-[#888888]">{String(Math.floor((data.arrivalRate * 12345) % 1000000)).padStart(6, '0')}</span></span>
+            <span className="text-[#FFDD00] text-[10px] bg-[#FFDD00]/10 px-2 py-0.5">{data.phase}</span>
           </p>
           
           <div className="space-y-1.5 font-mono text-xs">
