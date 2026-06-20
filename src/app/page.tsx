@@ -220,23 +220,25 @@ export default function Dashboard() {
             </h2>
             
             {aggMetrics && (
-              <div className="flex flex-col gap-3 font-mono">
-                <div className="bg-[#0A0A0A] p-3 border border-[#1C1C1C]">
-                  <p className="text-[10px] text-[#888888] uppercase tracking-wider mb-1">Mean Latency [Wq]</p>
-                  <p className="text-lg text-[#FFFFFF]">
-                    {aggMetrics.isStable ? `${aggMetrics.avgWq.toFixed(2)}s` : 'INFINITE'}
-                  </p>
-                </div>
-                
-                <div className="bg-[#0A0A0A] p-3 border border-[#1C1C1C]">
-                  <p className="text-[10px] text-[#888888] uppercase tracking-wider mb-1">Peak Utilization [ρ]</p>
-                  <p className="text-lg text-[#FFFFFF]">
-                    {(aggMetrics.avgRho * 100).toFixed(2)}%
-                  </p>
+              <div className="flex flex-col gap-2 font-mono">
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-[#0A0A0A] p-2.5 border border-[#1C1C1C]">
+                    <p className="text-[9px] text-[#888888] uppercase tracking-wider mb-0.5 truncate">Mean Latency</p>
+                    <p className="text-base font-bold text-[#FFFFFF] truncate">
+                      {aggMetrics.isStable ? `${aggMetrics.avgWq.toFixed(2)}s` : 'INFINITE'}
+                    </p>
+                  </div>
+                  
+                  <div className="bg-[#0A0A0A] p-2.5 border border-[#1C1C1C]">
+                    <p className="text-[9px] text-[#888888] uppercase tracking-wider mb-0.5 truncate">Peak Util.</p>
+                    <p className="text-base font-bold text-[#FFFFFF] truncate">
+                      {(aggMetrics.avgRho * 100).toFixed(2)}%
+                    </p>
+                  </div>
                 </div>
 
-                <div className={`mt-2 p-3 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
-                  <p className="text-xs opacity-70 uppercase tracking-wide mb-2 text-white">Network State</p>
+                <div className={`mt-1 p-2.5 border ${aggMetrics.isStable ? 'bg-[#000000] border-[#00FF41] shadow-[0_0_10px_rgba(0,255,65,0.2)]' : 'bg-red-950/40 border-red-500'}`}>
+                  <p className="text-[10px] opacity-70 uppercase tracking-wide mb-1.5 text-white">Network State</p>
                   {aggMetrics.isStable ? (
                     <div className="flex items-start gap-2 text-[#00FF41]">
                       <CheckCircle2 size={16} className="mt-0.5 shrink-0" />
