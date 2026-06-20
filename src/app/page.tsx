@@ -24,11 +24,14 @@ export default function Dashboard() {
     if (!trafficData.length) return { chartData: [], aggMetrics: null };
 
     let totalWq = 0;
-    let maxWq = 0;
     let totalRho = 0;
     let crashes = 0;
+    let maxWq = 0;
+    let maxRho = 0; // Initialize tracking for peak utilization
 
+    // Loop through the 1440-minute time-series data array
     const computed = trafficData.map(point => {
+      // Calculate real-time instantaneous utilization and wait times based on state sliders
       const metrics = calculateMMc(point.arrivalRate, mu, c);
       const displayWq = metrics.isStable ? metrics.wq : 3; // Visual cap
       
@@ -37,7 +40,10 @@ export default function Dashboard() {
         totalWq += metrics.wq;
         maxWq = Math.max(maxWq, metrics.wq);
       }
+      
       totalRho += metrics.rho;
+      // Extract absolute highest peak percentage achieved
+      maxRho = Math.max(maxRho, metrics.rho);
 
       return {
         ...point,
@@ -57,11 +63,12 @@ export default function Dashboard() {
         avgWq: stableCount > 0 ? totalWq / stableCount : Infinity,
         maxWq: crashes > 0 ? Infinity : maxWq,
         avgRho: totalRho / trafficData.length,
+        maxRho, // Set true maximum peak
         isStable: crashes === 0,
         crashes
       }
     };
-  }, [trafficData, mu, c]);
+  }, [trafficData, mu, c]); // Dependency array properly handles state updates
 
   if (!isClient) return null;
 
@@ -232,7 +239,7 @@ export default function Dashboard() {
                   <div className="bg-[#0A0A0A] p-2.5 border border-[#1C1C1C]">
                     <p className="text-[9px] text-[#888888] uppercase tracking-wider mb-0.5 truncate">Peak Util.</p>
                     <p className="text-base font-bold text-[#FFFFFF] truncate">
-                      {(aggMetrics.avgRho * 100).toFixed(2)}%
+                      {(aggMetrics.maxRho * 100).toFixed(2)}%
                     </p>
                   </div>
                 </div>
