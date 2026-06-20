@@ -242,7 +242,7 @@ export default function Dashboard() {
                       <CheckCircle2 size={16} className="mt-0.5 shrink-0" />
                       <div className="text-[10px] font-mono leading-relaxed">
                         <p className="font-bold tracking-wider mb-1">SYSTEM OPTIMAL: All traffic processed successfully.</p>
-                        <p>The current liquidity channels ({activeNodes}) successfully mitigated all market slippage risk.</p>
+                        <p>The current liquidity channels ({c}) successfully mitigated all market slippage risk.</p>
                       </div>
                     </div>
                   ) : (
@@ -250,7 +250,7 @@ export default function Dashboard() {
                       <AlertTriangle size={16} className="mt-0.5 shrink-0" />
                       <div className="text-[10px] font-mono leading-relaxed">
                         <p className="font-bold tracking-wider mb-1">CRITICAL WARNING: System unstable (ρ ≥ 1) for {chartData.filter(d => !d.isStable).length} minutes!</p>
-                        <p>The current liquidity channels ({activeNodes}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
+                        <p>The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.</p>
                       </div>
                     </div>
                   )}
