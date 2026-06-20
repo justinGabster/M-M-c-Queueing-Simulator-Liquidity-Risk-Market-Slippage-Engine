@@ -34,7 +34,7 @@ export default function Dashboard() {
     const computed = trafficData.map(point => {
       // Calculate real-time instantaneous utilization and wait times based on state sliders
       const metrics = calculateMMc(point.arrivalRate, mu, c);
-      const displayWq = metrics.isStable ? metrics.wq : 3; // Visual cap
+      const displayWq = metrics.isStable ? metrics.wq : null; // Use null for crashed periods so graph connects gaps
       
       if (!metrics.isStable) crashes++;
       else {
@@ -162,7 +162,7 @@ export default function Dashboard() {
           <p className="text-[#888888] mt-1 font-mono text-xs tracking-widest uppercase">M/M/c Slippage & Load Simulation</p>
         </div>
         <button 
-          onClick={() => setTrafficData(generateTrafficData())}
+          onClick={() => setTrafficData(STATIC_TRAFFIC_DATA)}
           className="px-4 py-1.5 bg-[#1C1C1C] hover:bg-[#2A2A2A] text-[#FFDD00] border border-[#FFDD00] uppercase font-mono text-xs tracking-wider transition-all shadow-[0_0_10px_rgba(255,221,0,0.2)] hover:shadow-[0_0_20px_rgba(255,221,0,0.5)] flex items-center gap-2"
         >
           <Activity size={14} /> Re-Initialize Protocol
@@ -334,6 +334,7 @@ export default function Dashboard() {
                   dot={false}
                   activeDot={{ r: 4, fill: "#FFDD00", stroke: "#000", strokeWidth: 2 }}
                   isAnimationActive={false}
+                  connectNulls={true}
                 />
 
                 <Line 
