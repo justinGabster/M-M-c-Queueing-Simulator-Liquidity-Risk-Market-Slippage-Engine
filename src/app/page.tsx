@@ -42,6 +42,8 @@ export default function Dashboard() {
       return {
         ...point,
         wq: displayWq,
+        lq: metrics.lq,
+        serviceRate: mu,
         rho: metrics.rho,
         isStable: metrics.isStable,
         arrivalRate: Number(point.arrivalRate.toFixed(2))
