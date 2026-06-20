@@ -153,55 +153,57 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="h-screen p-4 flex flex-col gap-4 selection:bg-[#FFDD00] selection:text-black overflow-hidden">
+    <div className="h-screen max-h-[2400px] flex flex-col p-2 md:p-4 gap-2 md:gap-4 selection:bg-[#FFDD00] selection:text-black overflow-hidden">
       {/* Header */}
-      <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 border-b border-[#1C1C1C] pb-3 shrink-0">
-        <div>
-          <h1 className="text-lg md:text-xl font-bold uppercase tracking-wider text-[#FFFFFF] flex items-center gap-2">
-            <Zap className="text-[#FFDD00]" size={24} />
-            M/M/c Queueing Simulator: Liquidity Risk & Market Slippage Engine
+      <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 border-b border-[#1C1C1C] pb-2 md:pb-3 shrink-0">
+        <div className="w-full md:w-auto overflow-hidden">
+          <h1 className="text-sm md:text-xl font-bold uppercase tracking-wider text-[#FFFFFF] flex items-center gap-2">
+            <Zap className="text-[#FFDD00] w-4 h-4 md:w-6 md:h-6 shrink-0" />
+            <span className="block md:hidden truncate">M/M/c Simulator: Slippage Engine</span>
+            <span className="hidden md:block truncate">M/M/c Queueing Simulator: Liquidity Risk & Market Slippage Engine</span>
           </h1>
-          <p className="text-[#888888] mt-1 font-mono text-xs tracking-widest uppercase">M/M/c Slippage & Load Simulation</p>
+          <p className="text-[#888888] mt-0.5 md:mt-1 font-mono text-[10px] md:text-xs tracking-widest uppercase">M/M/c Slippage & Load Simulation</p>
         </div>
         <button 
           onClick={() => setTrafficData(STATIC_TRAFFIC_DATA)}
-          className="px-4 py-1.5 bg-[#1C1C1C] hover:bg-[#2A2A2A] text-[#FFDD00] border border-[#FFDD00] uppercase font-mono text-xs tracking-wider transition-all shadow-[0_0_10px_rgba(255,221,0,0.2)] hover:shadow-[0_0_20px_rgba(255,221,0,0.5)] flex items-center gap-2"
+          className="w-full md:w-auto px-4 py-1.5 bg-[#1C1C1C] hover:bg-[#2A2A2A] text-[#FFDD00] border border-[#FFDD00] uppercase font-mono text-[10px] md:text-xs tracking-wider transition-all shadow-[0_0_10px_rgba(255,221,0,0.2)] hover:shadow-[0_0_20px_rgba(255,221,0,0.5)] flex items-center justify-center gap-2 shrink-0"
         >
           <Activity size={14} /> Re-Initialize Protocol
         </button>
       </header>
 
-      <main className="flex-1 grid grid-cols-1 lg:grid-cols-4 gap-4 min-h-0">
+      <main className="flex-1 flex flex-col lg:grid lg:grid-cols-4 gap-2 md:gap-4 min-h-0">
         
         {/* Left Col: Controls & Metrics */}
-        <div className="flex flex-col gap-4 lg:col-span-1 overflow-y-auto custom-scrollbar pr-1 pb-1">
+        <div className="flex-none lg:flex-auto flex flex-col gap-2 md:gap-4 lg:col-span-1 overflow-y-auto custom-scrollbar md:pr-1 md:pb-1">
           {/* Control Panel */}
-          <div className="tech-panel p-4">
-            <h2 className="text-xs font-mono uppercase tracking-widest text-[#FFFFFF] mb-4 flex items-center gap-2 border-b border-[#333333] pb-2">
+          <div className="tech-panel p-3 md:p-4 shrink-0">
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-[#FFFFFF] mb-2 md:mb-4 flex items-center gap-2 border-b border-[#333333] pb-1 md:pb-2">
               <Settings size={14} className="text-[#FFDD00]" />
               Core Parameters
             </h2>
             
-            <div className="space-y-6">
+            <div className="flex flex-col gap-3 md:gap-6">
               <div>
-                <label className="flex justify-between items-center text-xs font-mono text-[#888888] uppercase mb-2 tracking-wider">
+                <label className="flex justify-between items-center text-[10px] md:text-xs font-mono text-[#888888] uppercase mb-1 md:mb-2 tracking-wider">
                   <span>Active Nodes [c]</span>
                   <input 
                     type="number" 
                     min="1" max="100" 
                     value={c}
                     onChange={(e) => setC(Number(e.target.value))}
-                    className="bg-transparent text-[#FFDD00] text-sm font-bold text-right w-16 outline-none border-b border-transparent focus:border-[#FFDD00] hover:border-[#333333] transition-colors [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    className="bg-transparent text-[#FFDD00] text-xs md:text-sm font-bold text-right w-16 outline-none border-b border-transparent focus:border-[#FFDD00] hover:border-[#333333] transition-colors [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                 </label>
                 <input 
                   type="range" min="1" max="30" step="1" value={c}
                   onChange={(e) => setC(Number(e.target.value))}
+                  className="w-full"
                 />
               </div>
 
               <div>
-                <label className="flex justify-between items-center text-xs font-mono text-[#888888] uppercase mb-2 tracking-wider">
+                <label className="flex justify-between items-center text-[10px] md:text-xs font-mono text-[#888888] uppercase mb-1 md:mb-2 tracking-wider">
                   <span>Node Capacity [u]</span>
                   <div className="flex items-center">
                     <input 
@@ -209,49 +211,50 @@ export default function Dashboard() {
                       min="1" max="200" 
                       value={mu}
                       onChange={(e) => setMu(Number(e.target.value))}
-                      className="bg-transparent text-[#FFDD00] text-sm font-bold text-right w-16 outline-none border-b border-transparent focus:border-[#FFDD00] hover:border-[#333333] transition-colors [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                      className="bg-transparent text-[#FFDD00] text-xs md:text-sm font-bold text-right w-16 outline-none border-b border-transparent focus:border-[#FFDD00] hover:border-[#333333] transition-colors [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                     />
-                    <span className="text-[#FFDD00] text-sm font-bold ml-1">tx/s</span>
+                    <span className="text-[#FFDD00] text-xs md:text-sm font-bold ml-1">tx/s</span>
                   </div>
                 </label>
                 <input 
                   type="range" min="5" max="50" step="1" value={mu}
                   onChange={(e) => setMu(Number(e.target.value))}
+                  className="w-full"
                 />
               </div>
             </div>
           </div>
 
           {/* Performance Metrics */}
-          <div className="tech-panel p-4 flex-1 flex flex-col">
-            <h2 className="text-xs font-mono uppercase tracking-widest text-[#FFFFFF] mb-3 flex items-center gap-2 border-b border-[#333333] pb-2">
+          <div className="tech-panel p-3 md:p-4 shrink-0 flex-none md:flex-1 flex flex-col md:overflow-y-auto custom-scrollbar">
+            <h2 className="text-[10px] md:text-xs font-mono uppercase tracking-widest text-[#FFFFFF] mb-2 md:mb-3 flex items-center gap-2 border-b border-[#333333] pb-1 md:pb-2">
               <Activity size={14} className="text-[#FFDD00]" />
               Telemetry
             </h2>
             {aggMetrics && (
               <div className="flex flex-col gap-2 font-mono">
-                <div className="flex flex-col gap-2 text-[10px] sm:text-[11px] leading-relaxed">
+                <div className="grid grid-cols-2 md:flex md:flex-col gap-2 text-[9px] md:text-[11px] leading-relaxed">
                   {!aggMetrics.isStable ? (
                     <>
-                      <div className="p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500 font-bold">
+                      <div className="col-span-2 p-2 md:p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500 font-bold">
                         CRITICAL WARNING: System unstable (ρ ≥ 1) for {aggMetrics.crashes} minutes!
                       </div>
-                      <div className="p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500">
+                      <div className="col-span-2 p-2 md:p-2.5 border border-red-500/50 bg-[#0A0A0A] text-red-500">
                         The current liquidity channels ({c}) are insufficient for peak traffic. Infinite market slippage risk detected.
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
-                        Avg Wait Time (W_q): {aggMetrics.avgWq.toFixed(4)}s
+                      <div className={`p-2 md:p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        Avg Wait Time (W_q): <br className="md:hidden" />{aggMetrics.avgWq.toFixed(4)}s
                       </div>
-                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
-                        Max Peak Wait Time: {aggMetrics.maxWq.toFixed(4)}s
+                      <div className={`p-2 md:p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                        Max Peak Wait: <br className="md:hidden" />{aggMetrics.maxWq.toFixed(4)}s
                       </div>
-                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                      <div className={`col-span-2 md:col-span-1 p-2 md:p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
                         Avg System Utilization (ρ): {(aggMetrics.avgRho * 100).toFixed(2)}%
                       </div>
-                      <div className={`p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
+                      <div className={`col-span-2 md:col-span-1 p-2 md:p-2.5 border border-[#1C1C1C] bg-[#0A0A0A] ${aggMetrics.maxWq > 2.0 ? "text-[#FF8C00]" : "text-[#00FF41]"}`}>
                         {aggMetrics.maxWq > 2.0 ? "Warning: High Market Slippage Risk during peak surges." : "Stable: Wait times comfortably mitigating slippage risk."}
                       </div>
                     </>
@@ -260,7 +263,7 @@ export default function Dashboard() {
 
                 <button 
                   onClick={() => setShowDatasetModal(true)}
-                  className="mt-2 mb-4 w-full py-2.5 border border-[#333333] hover:border-[#FFDD00] bg-[#000000] hover:bg-[#1C1C1C] transition-all text-[10px] font-mono text-[#FFFFFF] hover:text-[#FFDD00] uppercase tracking-widest flex items-center justify-center gap-2 shrink-0"
+                  className="mt-1 md:mt-2 mb-2 md:mb-4 w-full py-2 md:py-2.5 border border-[#333333] hover:border-[#FFDD00] bg-[#000000] hover:bg-[#1C1C1C] transition-all text-[10px] font-mono text-[#FFFFFF] hover:text-[#FFDD00] uppercase tracking-widest flex items-center justify-center gap-2 shrink-0"
                 >
                   <Database size={14} />
                   View Sample Dataset
@@ -271,13 +274,13 @@ export default function Dashboard() {
         </div>
 
         {/* Right Col: Interactive Chart */}
-        <div className="tech-panel p-4 lg:col-span-3 flex flex-col h-full overflow-hidden">
-          <div className="mb-3 flex justify-between items-end border-b border-[#333333] pb-2 shrink-0">
+        <div className="tech-panel p-2 md:p-4 lg:col-span-3 flex-1 flex flex-col min-h-0 relative">
+          <div className="mb-2 md:mb-3 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#333333] pb-2 shrink-0 gap-2 md:gap-0">
             <div>
-              <h2 className="text-sm font-mono uppercase tracking-widest text-[#FFFFFF]">Slippage Exposure Vector</h2>
+              <h2 className="text-[10px] md:text-sm font-mono uppercase tracking-widest text-[#FFFFFF]">Slippage Exposure Vector</h2>
             </div>
             
-            <div className="flex gap-3 text-[9px] font-mono uppercase tracking-widest text-[#888888]">
+            <div className="flex flex-wrap gap-2 md:gap-3 text-[8px] md:text-[9px] font-mono uppercase tracking-widest text-[#888888]">
               <div className="flex items-center gap-1"><span className="w-2 h-2 border border-[#333]" style={{ backgroundColor: 'rgba(255,255,255,0.03)' }}></span> Off-Peak</div>
               <div className="flex items-center gap-1"><span className="w-2 h-2 bg-transparent border border-[#333]"></span> Normal</div>
               <div className="flex items-center gap-1"><span className="w-2 h-2" style={{ backgroundColor: 'rgba(255,255,255,0.08)' }}></span> Lunch</div>
@@ -287,7 +290,7 @@ export default function Dashboard() {
 
           <div className="flex-1 w-full relative min-h-0">
             {/* Legend Overlay */}
-            <div className="absolute top-4 right-4 bg-[#0A0A0A]/90 backdrop-blur-md border border-[#333333] p-3 z-10 font-mono text-[10px] uppercase tracking-wider shadow-lg">
+            <div className="hidden md:block absolute top-4 right-4 bg-[#0A0A0A]/90 backdrop-blur-md border border-[#333333] p-3 z-10 font-mono text-[10px] uppercase tracking-wider shadow-lg">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-4 h-[3px] rounded-full" style={{ backgroundColor: '#FFFFFF' }}></div>
                 <span className="text-[#FFFFFF]">Queue Wait Time (Wq)</span>
@@ -299,7 +302,7 @@ export default function Dashboard() {
             </div>
 
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={chartData} margin={{ top: 10, right: 10, left: 10, bottom: 20 }}>
+              <LineChart data={chartData} margin={{ top: 5, right: 5, left: -20, bottom: 20 }}>
                 <CartesianGrid strokeDasharray="1 4" stroke="#333333" vertical={false} />
                 
                 <ReferenceArea x1={0} x2={360} fill="#FFFFFF" fillOpacity={0.03} /> 
@@ -312,19 +315,19 @@ export default function Dashboard() {
                   tickFormatter={formatTimeTick} 
                   stroke="#555555" 
                   ticks={[0, 360, 660, 840, 1080, 1260, 1439]}
-                  tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
+                  tick={{fontFamily: 'monospace', fontSize: 9, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
-                  label={{ value: 'Time of Day (24H)', position: 'bottom', fill: '#888888', fontSize: 10, fontFamily: 'monospace' }}
+                  label={{ value: 'Time of Day (24H)', position: 'bottom', fill: '#888888', fontSize: 9, fontFamily: 'monospace' }}
                 />
                 <YAxis 
                   stroke="#555555" 
-                  tick={{fontFamily: 'monospace', fontSize: 10, fill: '#888888'}}
+                  tick={{fontFamily: 'monospace', fontSize: 9, fill: '#888888'}}
                   axisLine={{stroke: '#333333'}}
                   domain={[0, 2.5]}
-                  ticks={[0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5]}
-                  tickFormatter={(val) => val.toFixed(2) + 's'}
+                  ticks={[0, 0.5, 1.0, 1.5, 2.0, 2.5]}
+                  tickFormatter={(val) => val.toFixed(1) + 's'}
                   allowDataOverflow={true}
-                  label={{ value: 'Wait Time / Slippage Exposure (Seconds)', angle: -90, position: 'insideLeft', offset: 15, fill: '#888888', fontSize: 10, fontFamily: 'monospace', style: { textAnchor: 'middle' } }}
+                  label={{ value: 'Latency (Wq)', angle: -90, position: 'insideLeft', offset: 25, fill: '#888888', fontSize: 9, fontFamily: 'monospace', style: { textAnchor: 'middle' } }}
                 />
                 <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#FFDD00', strokeWidth: 1, strokeDasharray: '3 3' }} />
                 
